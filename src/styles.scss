@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    // font: inherit;
+}
+
+img,
+picture,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    padding: 1rem 2rem;
+}
+
+.res-table {
+    overflow-x: auto;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+header, h1 {
+    padding: 3px;
+}
+main {
+    min-height: 80vh;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: gray;
+}
+
+button {
+    min-width: max-content;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.info {
+    @media screen and (min-width: 45em) {
+        display: none;
+    }
+}
+
+td {
+    color: white;
+}
